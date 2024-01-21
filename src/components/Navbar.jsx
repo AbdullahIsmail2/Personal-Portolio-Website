@@ -13,7 +13,7 @@ const Navbar = () => {
 	// for menu toggling on mobile devices
 
 	return (
-		<nav className="h-20 bg-primary fixed bg-transparent z-20 top-0 left-0 right-0">
+		<nav className="h-20 bg-primary fixed bg-transparent z-50 top-0 left-0 right-0 ">
 			<div
 				className={`h-full w-full flex items-center justify-between max-w-7xl mx-auto relative bg-transparent ${styles.paddingX}`}
 			>

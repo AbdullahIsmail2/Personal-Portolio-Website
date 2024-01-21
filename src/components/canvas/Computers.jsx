@@ -9,7 +9,7 @@ const Computers = ({ isMobile }) => {
 
 	return (
 		<mesh receiveShadow>
-			<hemisphereLight intensity={0.15}  />
+			<hemisphereLight intensity={0.15} />
 			<ambientLight intensity={3} />
 			<pointLight />
 			{/* <spotLight
@@ -54,28 +54,30 @@ const ComputersCanvas = () => {
 	}, []);
 
 	return (
-		<Canvas
-			frameloop="demand"
-			shadows
-			shadowMap
-			dpr={[1, 2]}
-			camera={{ position: [20, 3, 5], fov: 25 }}
-			gl={{
-				preserveDrawingBuffer: true,
-				shadowMap: { type: "PCFSoft", size: 1024 },
-			}}
-		>
-			<Suspense fallback={<CanvasLoader />}>
-				<OrbitControls
-					enableZoom={false}
-					maxPolarAngle={Math.PI / 2}
-					minPolarAngle={Math.PI / 2}
-				/>
-				<Computers isMobile={isMobile} />
-			</Suspense>
+		<div style={{ height: "100vh", width: "100vw" }}>
+			<Canvas
+				frameloop="demand"
+				shadows
+				shadowMap
+				dpr={[1, 2]}
+				camera={{ position: [20, 3, 5], fov: 25 }}
+				gl={{
+					preserveDrawingBuffer: true,
+					shadowMap: { type: "PCFSoft", size: 1024 },
+				}}
+			>
+				<Suspense fallback={<CanvasLoader />}>
+					<OrbitControls
+						enableZoom={false}
+						maxPolarAngle={Math.PI / 2}
+						minPolarAngle={Math.PI / 2}
+					/>
+					<Computers isMobile={isMobile} />
+				</Suspense>
 
-			<Preload all />
-		</Canvas>
+				<Preload all />
+			</Canvas>
+		</div>
 	);
 };
 

@@ -19,9 +19,6 @@
 	display: block;
 }
 
-canvas {
-	height: 100vh !important
-}
 
 .black-gradient {
 	background: #000000; /* fallback for old browsers */

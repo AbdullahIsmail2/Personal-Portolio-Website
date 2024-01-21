@@ -1,64 +1,42 @@
 import React from "react";
 
-import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
 
-import { services } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 
 import SectionWrapper from "../hoc/SectionWrapper";
-
-const ServiceCard = ({ title, icon, index }) => {
-	console.log(title);
-	return (
-		<Tilt className="xs:w-[250px] w-full">
-			<motion.div
-				variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
-				className="w-full green-pink-gradient rounded-[20px] shadow-card p-[1px]"
-			>
-				<div
-					options={{
-						max: 45,
-						scale: 1,
-						speed: 450,
-					}}
-					className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex flex-col justify-evenly items-center"
-				>
-					<img src={icon} alt={title} className="w-16 h-16 object-contain" />
-					<h3 className="text-white text-[20px] font-bold text-center">
-						{title}
-					</h3>
-				</div>
-			</motion.div>
-		</Tilt>
-	);
-};
+import Tech from "./Tech";
 
 const About = () => {
 	return (
-		<div className="w- bg-primary m-auto pt-[130px] min-h-screen px-5">
-			<motion.div variants={textVariant()}>
-				<h4 className={`${styles.sectionSubText} mb-2`}>Introduction</h4>
-				<h2 className={`${styles.sectionHeadText}`}>Overview.</h2>
-			</motion.div>
+		<section className=" bg-primary min-h-screen px-5 flex flex-col pt-24">
+			<div className="h-[calc(100vh-5rem)] ">
+				<motion.div variants={textVariant()}>
+					<h4 className={`${styles.sectionSubText} mb-2`}>Introduction</h4>
+					<h2 className={`${styles.sectionHeadText}`}>Overview.</h2>
+				</motion.div>
 
-			<motion.p
-				variants={fadeIn("", "", 0.1, 1)}
-				className="text-secondary text-[17px] max-w-3xl leading-[30px] mt-4"
-			>
-				Passionate self-taught junior frontend developer skilled in HTML, CSS,
-				JS, Tailwind, and React. Committed to crafting engaging web experiences.
-				Ready to contribute and grow in a dynamic team.
-			</motion.p>
-
-			<div className="flex flex-wrap gap-10 mt-20 text-white">
-				{services.map((service, index) => (
-					<ServiceCard key={service.title} index={index} {...service} />
-				))}
+				<motion.p
+					variants={fadeIn("", "", 0.1, 1)}
+					className="text-secondary text-[17px] max-w-3xl leading-[30px] mt-4"
+				>
+					<p>
+						Hello! I'm a passionate self-taught junior frontend developer with a
+						keen eye for creating captivating digital experiences. My journey
+						into the world of web development has been driven by an insatiable
+						curiosity and a love for turning ideas into interactive and visually
+						appealing realities. My toolbox extends to leveraging the power of
+						frameworks like React and the efficiency of Tailwind CSS, ensuring
+						that my projects are not just functional but also beautifully
+						designed and responsive.
+					</p>
+				</motion.p>
 			</div>
-		</div>
+
+			{/* <Tech /> */}
+		</section>
 	);
 };
 
