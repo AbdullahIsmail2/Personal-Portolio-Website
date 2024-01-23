@@ -10,7 +10,10 @@ import {
 	Tech,
 	Works,
 	StarsCanvas,
+
 } from "./components";
+import Skills from "./components/Skills";
+
 
 const App = () => {
 	return (
@@ -23,6 +26,7 @@ const App = () => {
 			</div>
       <About />
       <Tech />
+			<Skills />
       {/* <Experience /> */}
       <Works />
       {/* <Feedbacks /> */}
