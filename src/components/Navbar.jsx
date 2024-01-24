@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Logo from "../assets/logo.svg";
 import Menu from "../assets/menu.svg";
@@ -12,8 +12,32 @@ const Navbar = () => {
 	const [toggle, setToggle] = useState(false);
 	// for menu toggling on mobile devices
 
+	const [scrolled, setScrolled] = useState(false);
+
+	useEffect(() => {
+		const handleScroll = () => {
+			if (window.scrollY >= 80) {
+				setScrolled(true);
+			} else {
+				setScrolled(false);
+			}
+		};
+
+		// Attach the event listener when the component mounts
+		window.addEventListener("scroll", handleScroll);
+
+		// Clean up the event listener when the component unmounts
+		return () => {
+			window.removeEventListener("scroll", handleScroll);
+		};
+	}, [scrolled]); // Now, the effect will re-run whenever 'scrolled' changes
+
 	return (
-		<nav className="h-20 bg-primary fixed bg-transparent z-50 top-0 left-0 right-0 ">
+		<nav
+			className={`h-20 ${
+				scrolled ? "bg-primary" : "bg-transparent"
+			}  fixed z-50 top-0 left-0 right-0 `}
+		>
 			<div
 				className={`h-full w-full flex items-center justify-between max-w-7xl mx-auto relative bg-transparent ${styles.paddingX}`}
 			>
@@ -53,26 +77,26 @@ const Navbar = () => {
 					// change the styles based on if menu or close img is shown
 					onClick={() => setToggle(!toggle)}
 				/>
-        { toggle && (
-          <div className="absolute right-6 -bottom-[200%] w-[140px] rounded-xl h-[160px] pl-6 py-6 black-gradient z-10">
-            <ul className="flex flex-col justify-between h-full">
-              {navLinks.map((link) => (
-                <li
-                  key={link.id}
-                  onClick={() => {
-                    setToggle(!toggle)
-                    setActive(link.title)
-                  } }
-                  className={`${
-                    active === link.id ? "text-white" : "text-secondary"
-                  } font-poppins text-[16px] font-medium cursor-pointer`}
-                >
-                  <a href={`#${link.id}`}>{link.title}</a>
-                </li>
-              ))}
-            </ul>
-          </div>
-        )}
+				{toggle && (
+					<div className="absolute right-6 -bottom-[200%] w-[140px] rounded-xl h-[160px] pl-6 py-6 black-gradient z-10">
+						<ul className="flex flex-col justify-between h-full">
+							{navLinks.map((link) => (
+								<li
+									key={link.id}
+									onClick={() => {
+										setToggle(!toggle);
+										setActive(link.title);
+									}}
+									className={`${
+										active === link.id ? "text-white" : "text-secondary"
+									} font-poppins text-[16px] font-medium cursor-pointer`}
+								>
+									<a href={`#${link.id}`}>{link.title}</a>
+								</li>
+							))}
+						</ul>
+					</div>
+				)}
 			</div>
 		</nav>
 	);
