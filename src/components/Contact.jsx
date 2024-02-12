@@ -16,12 +16,11 @@ const Contact = () => {
 	});
 
 	const [loading, setLoading] = useState(false);
-  const [sent, setSent] = useState(false)
+	const [sent, setSent] = useState(false);
 
 	const handleChange = (e) => {
 		const { target } = e;
 		const { name, value } = target;
-  
 
 		setForm({
 			...form,
@@ -50,10 +49,10 @@ const Contact = () => {
 			)
 			.then(
 				() => {
-          setSent(true)
-          setTimeout(() => {
-            setSent(false)
-          }, 3000)
+					setSent(true);
+					setTimeout(() => {
+						setSent(false);
+					}, 3000);
 					setLoading(false);
 					alert(
 						"Thank you for message. I will get back to you as soon as possible"
@@ -95,7 +94,7 @@ const Contact = () => {
 							name="name"
 							value={form.name}
 							onChange={handleChange}
-							placeholder="What's your good name?"
+							placeholder="What's your name?"
 							className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
 						/>
 					</label>
@@ -126,7 +125,7 @@ const Contact = () => {
 						type="submit"
 						className="bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary"
 					>
-						{sent === false ? loading ? "Sending..." : "Send" : sent}
+						{sent === false ? (loading ? "Sending..." : "Send") : sent}
 					</button>
 				</form>
 			</motion.div>

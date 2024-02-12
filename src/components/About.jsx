@@ -11,8 +11,8 @@ import Tech from "./Tech";
 
 const About = () => {
 	return (
-		<section className=" bg-primary min-h-screen px-5 flex flex-col pt-24">
-			<div className="h-[calc(100vh-5rem)] ">
+		<section className=" bg-primary mb-24 px-5 flex flex-col pt-24">
+			<div className="">
 				<motion.div variants={textVariant()}>
 					<h4 className={`${styles.sectionSubText} mb-2`}>Introduction</h4>
 					<h2 className={`${styles.sectionHeadText}`}>Overview.</h2>

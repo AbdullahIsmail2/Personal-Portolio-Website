@@ -5,7 +5,7 @@ import SectionWrapper from "../hoc/SectionWrapper";
 import { projects } from "../constants";
 import { motion } from "framer-motion";
 
-import { github } from "../assets";
+import { github, webpic } from "../assets";
 import { fadeIn, textVariant } from "../utils/motion";
 const Works = () => {
 	return (
@@ -42,6 +42,7 @@ const ProjectCard = ({
 	index,
 	image,
 	source_code_link,
+	web_tag
 }) => {
 	return (
 		<motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
@@ -53,7 +54,8 @@ const ProjectCard = ({
 					<img
 						src={image}
 						alt={name}
-						className="w-full h-full object-cover rounded-2xl"
+						className="w-full h-full object-contain rounded-2xl"
+						// style={{ zoom: "50%" }}
 					/>
 
 					<div className="absolute inset-0 flex justify-end m-3 card-img_hover">
@@ -62,6 +64,12 @@ const ProjectCard = ({
 							className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
 						>
 							<img src={github} alt className="w-1/2 h-1/2 object-contain" />
+						</div>
+						<div
+							onClick={() => window.open(web_tag, "_blank")}
+							className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+						>
+							<img src={webpic} alt className="w-1/2 h-1/2 object-contain bg-red"/>
 						</div>
 					</div>
 				</div>

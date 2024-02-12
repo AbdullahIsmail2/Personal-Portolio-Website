@@ -4,25 +4,15 @@ import {
 	creator,
 	web,
 	javascript,
-	typescript,
 	html,
 	css,
 	reactjs,
-	redux,
 	tailwind,
-	nodejs,
-	mongodb,
 	git,
-	figma,
-	docker,
-	meta,
-	starbucks,
-	tesla,
-	shopify,
-	carrent,
-	jobit,
-	tripguide,
-	threejs,
+	perfumeproj,
+	chatapp,
+	snake,
+	webpic
 } from "../assets";
 
 export const navLinks = [
@@ -84,45 +74,21 @@ const technologies = [
 		name: "React JS",
 		icon: reactjs,
 	},
-	// {
-	//   name: "Redux Toolkit",
-	//   icon: redux,
-	// },
 	{
 		name: "Tailwind CSS",
 		icon: tailwind,
 	},
-	// {
-	//   name: "Node JS",
-	//   icon: nodejs,
-	// },
-	// {
-	//   name: "MongoDB",
-	//   icon: mongodb,
-	// },
-	// {
-	//   name: "Three JS",
-	//   icon: threejs,
-	// },
 	{
 		name: "Git",
 		icon: git,
 	},
-	// {
-	//   name: "figma",
-	//   icon: figma,
-	// },
-	// {
-	//   name: "docker",
-	//   icon: docker,
-	// },
 ];
 
 const experiences = [
 	{
 		title: "Education",
 		company_name: "",
-		icon: starbucks,
+		icon: '',
 		iconBg: "#383E56",
 		date: "March 2020 - April 2021",
 		points: [
@@ -135,7 +101,7 @@ const experiences = [
 	{
 		title: "React Native Developer",
 		company_name: "Tesla",
-		icon: tesla,
+		icon: 'tesla',
 		iconBg: "#E6DEDD",
 		date: "Jan 2021 - Feb 2022",
 		points: [
@@ -148,7 +114,7 @@ const experiences = [
 	{
 		title: "Web Developer",
 		company_name: "Shopify",
-		icon: shopify,
+		icon: 'shopify',
 		iconBg: "#383E56",
 		date: "Jan 2022 - Jan 2023",
 		points: [
@@ -161,7 +127,7 @@ const experiences = [
 	{
 		title: "Full stack Developer",
 		company_name: "Meta",
-		icon: meta,
+		icon: 'meta',
 		iconBg: "#E6DEDD",
 		date: "Jan 2023 - Present",
 		points: [
@@ -202,58 +168,61 @@ const testimonials = [
 
 const projects = [
 	{
-		name: "Car Rent",
+		name: "Real-Time Chat App",
 		description:
-			"Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+			"I engineered a dynamic real-time chat application using HTML, CSS, and React.js, powered by Firebase and ChatEngine. This platform enables seamless communication with real-time updates, facilitating instant messaging, file attachments, and image sharing. ",
 		tags: [
 			{
 				name: "react",
 				color: "blue-text-gradient",
 			},
 			{
-				name: "mongodb",
+				name: "rest api",
 				color: "green-text-gradient",
+			},
+			{
+				name: "realtime",
+				color: "pink-text-gradient",
+			},
+		],
+		image: chatapp,
+		source_code_link: "https://github.com/AbdullahIsmail2/Real-Time-ChatApp",
+		web_tag: 'https://www.mychatapp.co.uk/'
+	
+	},
+	{
+		name: "Arome d'Ayman",
+		description:
+			"I developed a sleek e-commerce platform for my friend Ayman's side business, featuring modern design and seamless functionality. Using React.js and tailwind CSS, the site offers users an engaging browsing experience, showcasing Ayman's fragrances with elegant visuals and mobile-friendly design..",
+		tags: [
+			{
+				name: "react",
+				color: "blue-text-gradient",
 			},
 			{
 				name: "tailwind",
-				color: "pink-text-gradient",
-			},
-		],
-		image: carrent,
-		source_code_link: "https://github.com/",
-	},
-	{
-		name: "Job IT",
-		description:
-			"Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-		tags: [
-			{
-				name: "react",
-				color: "blue-text-gradient",
-			},
-			{
-				name: "restapi",
 				color: "green-text-gradient",
 			},
 			{
-				name: "scss",
+				name: "responsive",
 				color: "pink-text-gradient",
 			},
 		],
-		image: jobit,
-		source_code_link: "https://github.com/",
+		image: perfumeproj,
+		source_code_link: "https://github.com/abdullahismail2/perfume-project",
+		web_tag: 'https://arome-d-ayman.co.uk/'
 	},
 	{
-		name: "Trip Guide",
+		name: "Classical Snake Game",
 		description:
-			"A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+			"I crafted a classic Snake Game using HTML, CSS, and JavaScript, with intuitive controls and dynamic gameplay, players navigate the snake through a grid, consuming food to grow longer while avoiding collisions. The game features responsive design, CSS animations, and JavaScript logic for smooth interactivity and scoring",
 		tags: [
 			{
-				name: "nextjs",
+				name: "problems-solving",
 				color: "blue-text-gradient",
 			},
 			{
-				name: "supabase",
+				name: "algorithmic thinking",
 				color: "green-text-gradient",
 			},
 			{
@@ -261,9 +230,10 @@ const projects = [
 				color: "pink-text-gradient",
 			},
 		],
-		image: tripguide,
-		source_code_link: "https://github.com/",
-	},
+		image: snake,
+		source_code_link: "https://github.com/AbdullahIsmail2/snake-game",
+		web_tag: 'https://classicalsnakegame.netlify.app/'
+	}
 ];
 
 export { services, technologies, experiences, testimonials, projects };

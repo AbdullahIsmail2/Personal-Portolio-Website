@@ -5,6 +5,8 @@ import Menu from "../assets/menu.svg";
 import Close from "../assets/close.svg";
 import { styles } from "../styles";
 import { navLinks } from "../constants";
+import {github, linkedin} from '../assets';
+
 const Navbar = () => {
 	const [active, setActive] = useState("");
 	// tracks which part of the page user is on
@@ -55,6 +57,12 @@ const Navbar = () => {
 						<span className="hidden md:block"> | &nbsp; Personal Website</span>
 					</p>
 				</Link>
+				<div className='h-full flex items-center justify-center gap-6'>
+				<img src={github} className='h-1/2 cursor-pointer' onClick={() => window.open('https://github.com/abdullahismail2', "_blank")} />
+				<img src={linkedin} className='h-[40%] cursor-pointer' onClick={() => window.open('https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit', "_blank")} />
+
+				</div>
+				
 				<ul className="hidden w-1/2 max-w-[300px] sm:flex justify-between gap-10">
 					{navLinks.map((link) => (
 						<li
