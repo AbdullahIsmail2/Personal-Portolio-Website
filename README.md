@@ -32,12 +32,17 @@ This is a personal project website showcasing my portfolio, built using HTML, CS
    ```
 
 2. Install dependencies:
-   cd your-project
-   npm install
+
+  ```bash
+    cd your-project
+    npm install
+  ```
 
 3. Run the development server
 
-npm run dev
+  ```bash
+  npm run dev
+  ```
 
 ## Contact
 
