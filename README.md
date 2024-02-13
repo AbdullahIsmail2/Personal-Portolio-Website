@@ -33,16 +33,20 @@ This is a personal project website showcasing my portfolio, built using HTML, CS
 
 2. Install dependencies:
 
-  ```bash
-    cd your-project
-    npm install
-  ```
+Navigate to the project directory:
+
+Before installing dependencies, make sure to navigate to the root directory of the cloned project on your local machine. Replace project-directory with the actual name of the directory where you've cloned the project.
+
+```bash
+  cd project-directory
+  npm install
+```
 
 3. Run the development server
 
-  ```bash
-  npm run dev
-  ```
+```bash
+npm run dev
+```
 
 ## Contact
 
