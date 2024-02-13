@@ -7,12 +7,13 @@ This is a personal project website showcasing my portfolio, built using HTML, CS
 - Responsive design: Ensures optimal viewing and interaction across various devices and screen sizes.
 - Beautiful animations: Utilizes Framer Motion for creating stunning animations throughout the website.
 - Sections:
+  - **Navbar**: Provides easy navigation as well as links to GitHub and LinkedIn profile.
   - **Hero Section**: Introduces visitors to the website and provides a brief overview.
   - **Overview Section**: Offers a detailed overview of my background, experience, and interests.
   - **Technologies Section**: Lists the technologies and tools used in building the website.
   - **Projects Section**: Showcases a selection of my projects with descriptions and links.
   - **Key Skills Section**: Highlights key skills and expertise.
-  - **Contact Us Section**: Provides contact information and links to GitHub and LinkedIn profiles.
+  - **Contact Us Section**: Provides contact information.
 
 ## Technologies Used
 
@@ -27,7 +28,7 @@ This is a personal project website showcasing my portfolio, built using HTML, CS
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/your-project.git
+   git clone https://github.com/abdullahismail2/personal-portfolio-website
    ```
 
 2. Install dependencies:
