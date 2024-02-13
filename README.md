@@ -4,6 +4,7 @@ This is a personal project website showcasing my portfolio, built using HTML, CS
 
 ## Features
 
+- Efficient React folder structure: This project follows an efficient React folder structure for better organization and maintainability. You'll find components, pages, utilities, and other related files organized in a structured manner.
 - Responsive design: Ensures optimal viewing and interaction across various devices and screen sizes.
 - Beautiful animations: Utilizes Framer Motion for creating stunning animations throughout the website.
 - Sections:
