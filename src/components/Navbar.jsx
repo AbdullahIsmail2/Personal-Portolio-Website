@@ -70,7 +70,7 @@ const Navbar = () => {
 						className="h-[30%] xs:h-[40%] cursor-pointer"
 						onClick={() =>
 							window.open(
-								"https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit",
+								"https://www.linkedin.com/in/abdullahismail-profile",
 								"_blank"
 							)
 						}
