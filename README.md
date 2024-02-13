@@ -1,4 +1,4 @@
-# Personal Project Website
+# Personal Porfolio Website
 
 This is a personal project website showcasing my portfolio, built using HTML, CSS, Tailwind CSS, React.js, and Framer Motion. The website is responsive, features beautiful animations, and contains various sections including a hero section, overview section, technologies section, projects section, key skills section, and contact us section.
 
