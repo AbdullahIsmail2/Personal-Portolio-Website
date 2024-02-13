@@ -5,7 +5,7 @@ import Menu from "../assets/menu.svg";
 import Close from "../assets/close.svg";
 import { styles } from "../styles";
 import { navLinks } from "../constants";
-import {github, linkedin} from '../assets';
+import { github, linkedin } from "../assets";
 
 const Navbar = () => {
 	const [active, setActive] = useState("");
@@ -43,7 +43,7 @@ const Navbar = () => {
 			<div
 				className={`h-full w-full flex items-center justify-between max-w-7xl mx-auto relative bg-transparent ${styles.paddingX}`}
 			>
-				<Link
+				{/* <Link
 					to={"/"}
 					className="flex gap-2 items-center"
 					onClick={() => {
@@ -54,16 +54,30 @@ const Navbar = () => {
 					<img src={Logo} className="h-9 w-9 object-contain" alt="logo" />
 					<p className="font-bold flex-grow flex cursor-pointer text-[18px]">
 						Abdullah &nbsp;{" "}
-						<span className="hidden md:block"> | &nbsp; Personal Website</span>
+						<span className="hidden lg:block"> | &nbsp; Personal Website</span>
 					</p>
-				</Link>
-				<div className='h-full flex items-center justify-center gap-6'>
-				<img src={github} className='h-1/2 cursor-pointer' onClick={() => window.open('https://github.com/abdullahismail2', "_blank")} />
-				<img src={linkedin} className='h-[40%] cursor-pointer' onClick={() => window.open('https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit', "_blank")} />
-
+				</Link> */}
+				<div className="h-full flex items-center justify-center gap-4 xs:gap-6">
+					<img
+						src={github}
+						className="h-[35%] xs:h-1/2 cursor-pointer"
+						onClick={() =>
+							window.open("https://github.com/abdullahismail2", "_blank")
+						}
+					/>
+					<img
+						src={linkedin}
+						className="h-[30%] xs:h-[40%] cursor-pointer"
+						onClick={() =>
+							window.open(
+								"https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit",
+								"_blank"
+							)
+						}
+					/>
 				</div>
-				
-				<ul className="hidden w-1/2 max-w-[300px] sm:flex justify-between gap-10">
+
+				<ul className="hidden w-1/3 max-w-[300px] sm:flex justify-between gap-5 md:gap-10">
 					{navLinks.map((link) => (
 						<li
 							key={link.id}

@@ -6,7 +6,7 @@ import { styles } from "../styles";
 
 const Tech = () => {
 	return (
-		<section className="flex flex-col w-full">
+		<section className="flex flex-col w-full mb-36">
 			<h5 className={`${styles.sectionSubText} mb-4`}>Skills</h5>
 			<h3 className={`${styles.sectionHeadText} mb-20`}>Technologies.</h3>
 			<div className="flex flex-row flex-wrap gap-10 gap-y-20 ">

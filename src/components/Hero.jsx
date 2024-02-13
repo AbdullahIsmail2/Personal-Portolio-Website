@@ -20,8 +20,11 @@ const Hero = () => {
 						Hi, I'm <span className="text-[#915EFF]">Abdullah</span>
 					</h1>
 					<p className={`${styles.heroSubText} mt-2 text-white-100`}>
-						A Front-End Developer crafting modern websites{" "}
-						<br className="hidden sm:block" /> with cutting-edge technologies
+						Front-End Developer crafting modern websites{" "}
+						<br className="hidden lg:block" />
+						<span className="hidden md:inline">
+							with cutting-edge technologies{" "} 
+						</span>
 						and stunning UIs
 					</p>
 				</div>
@@ -29,23 +32,23 @@ const Hero = () => {
 
 			<ComputersCanvas />
 
-      <div className="absolute w-full bottom-32 xs:bottom-10 flex justify-center items-center">
-        <a href="#about">
-          <div className="w-[35px] h-[65px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
-            <motion.dev
-              animate={{
-                y: [0, 24, 0]
-              }}
-              transition={{
-                duration: 3,
-                repeat: Infinity,
-                repeatType: 'loop'
-              }}
-              className='w-3 h-3 rounded-full bg-secondary mb-1'
-            />
-          </div>
-        </a>
-      </div>
+			<div className="absolute w-full bottom-32 xs:bottom-10 flex justify-center items-center">
+				<a href="#about">
+					<div className="w-[35px] h-[65px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
+						<motion.dev
+							animate={{
+								y: [0, 24, 0],
+							}}
+							transition={{
+								duration: 3,
+								repeat: Infinity,
+								repeatType: "loop",
+							}}
+							className="w-3 h-3 rounded-full bg-secondary mb-1"
+						/>
+					</div>
+				</a>
+			</div>
 		</section>
 	);
 };

@@ -1,6 +1,5 @@
 import {
 	mobile,
-	backend,
 	creator,
 	web,
 	javascript,
@@ -12,7 +11,9 @@ import {
 	perfumeproj,
 	chatapp,
 	snake,
-	webpic
+	webpic,
+	charity,
+	techimg1,
 } from "../assets";
 
 export const navLinks = [
@@ -32,24 +33,24 @@ export const navLinks = [
 
 const services = [
 	{
-		title: "Communication",
-		text: "Effective verbal and written communication",
-		icon: web,
+		title: "Collaborating with Clients:",
+		text: "When i was building the charity application, I actively engaged with clients to understand their needs and vision, fostering open communication and collaboration throughout the development process.",
+		icon: techimg1,
 	},
 	{
-		title: "Problem-Solving",
-		text: "Analytical and creative approach to challenges",
-		icon: mobile,
+		title: "Conducting User Testing",
+		text: "When designing the perfume e-commerce website I conducted comprehensive user testing to gather insights and feedback, ensuring that products and websites are user-friendly and intuitive.",
+		icon: techimg1,
 	},
 	{
-		title: "Adaptability",
-		text: "Quick learner and open to new technologies",
-		icon: backend,
+		title: "Feedback Sessions with Clients",
+		text: "With the charity website, I facilitated feedback sessions with clients to review progress, address concerns, and incorporate feedback into project iterations, ensuring alignment with client expectations.",
+		icon: techimg1,
 	},
 	{
-		title: "Attention to Detail",
-		text: "Ensuring high-quality code and user interfaces",
-		icon: creator,
+		title: "Working Under Pressure and Meeting Deadlines:",
+		text: "When building the perfume and charity websites i had to manage my workload effectively, and map out each task in order meeting project deadlines with precision and efficiency.",
+		icon: techimg1,
 	},
 ];
 
@@ -84,101 +85,42 @@ const technologies = [
 	},
 ];
 
-const experiences = [
-	{
-		title: "Education",
-		company_name: "",
-		icon: '',
-		iconBg: "#383E56",
-		date: "March 2020 - April 2021",
-		points: [
-			"Developing and maintaining web applications using React.js and other related technologies.",
-			"Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-			"Implementing responsive design and ensuring cross-browser compatibility.",
-			"Participating in code reviews and providing constructive feedback to other developers.",
-		],
-	},
-	{
-		title: "React Native Developer",
-		company_name: "Tesla",
-		icon: 'tesla',
-		iconBg: "#E6DEDD",
-		date: "Jan 2021 - Feb 2022",
-		points: [
-			"Developing and maintaining web applications using React.js and other related technologies.",
-			"Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-			"Implementing responsive design and ensuring cross-browser compatibility.",
-			"Participating in code reviews and providing constructive feedback to other developers.",
-		],
-	},
-	{
-		title: "Web Developer",
-		company_name: "Shopify",
-		icon: 'shopify',
-		iconBg: "#383E56",
-		date: "Jan 2022 - Jan 2023",
-		points: [
-			"Developing and maintaining web applications using React.js and other related technologies.",
-			"Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-			"Implementing responsive design and ensuring cross-browser compatibility.",
-			"Participating in code reviews and providing constructive feedback to other developers.",
-		],
-	},
-	{
-		title: "Full stack Developer",
-		company_name: "Meta",
-		icon: 'meta',
-		iconBg: "#E6DEDD",
-		date: "Jan 2023 - Present",
-		points: [
-			"Developing and maintaining web applications using React.js and other related technologies.",
-			"Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-			"Implementing responsive design and ensuring cross-browser compatibility.",
-			"Participating in code reviews and providing constructive feedback to other developers.",
-		],
-	},
-];
-
-const testimonials = [
-	{
-		testimonial:
-			"I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-		name: "Sara Lee",
-		designation: "CFO",
-		company: "Acme Co",
-		image: "https://randomuser.me/api/portraits/women/4.jpg",
-	},
-	{
-		testimonial:
-			"I've never met a web developer who truly cares about their clients' success like Rick does.",
-		name: "Chris Brown",
-		designation: "COO",
-		company: "DEF Corp",
-		image: "https://randomuser.me/api/portraits/men/5.jpg",
-	},
-	{
-		testimonial:
-			"After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-		name: "Lisa Wang",
-		designation: "CTO",
-		company: "456 Enterprises",
-		image: "https://randomuser.me/api/portraits/women/6.jpg",
-	},
-];
-
 const projects = [
 	{
-		name: "Real-Time Chat App",
+		name: "Website for a Real charity",
 		description:
-			"I engineered a dynamic real-time chat application using HTML, CSS, and React.js, powered by Firebase and ChatEngine. This platform enables seamless communication with real-time updates, facilitating instant messaging, file attachments, and image sharing. ",
+			"Collaborated with the charity (Somali Parents) to redesign their website and enhance user experience.I implemented modern design principles and responsive web design techniques using React JS and tailwind CSS to ensure accessibility across devices. I integrated donation and volunteer management systems to streamline the operations of the charity. Conducted user testing and feedback sessions to iterate and improve the functionality and usability of the website.",
 		tags: [
 			{
-				name: "react",
+				name: "user-testing",
 				color: "blue-text-gradient",
 			},
 			{
-				name: "rest api",
+				name: "client feedback",
 				color: "green-text-gradient",
+			},
+			{
+				name: "agile methodology",
+				color: "pink-text-gradient",
+			},
+		],
+		image: charity,
+		source_code_link:
+			"https://github.com/AbdullahIsmail2/SomaliParents-Redesign",
+		web_tag: "https://somaliparents.co.uk/",
+	},
+	{
+		name: "Real-Time Chat App",
+		description:
+			"I engineered a dynamic real-time chat application using HTML, CSS, and React.js, powered by Firebase and ChatEngine. This platform also has user sign in authenticatio. I have enabled seamless communication with real-time updates, facilitating instant messaging, file attachments, and image sharing. ",
+		tags: [
+			{
+				name: "RESTful API",
+				color: "green-text-gradient",
+			},
+			{
+				name: "react",
+				color: "blue-text-gradient",
 			},
 			{
 				name: "realtime",
@@ -187,8 +129,7 @@ const projects = [
 		],
 		image: chatapp,
 		source_code_link: "https://github.com/AbdullahIsmail2/Real-Time-ChatApp",
-		web_tag: 'https://www.mychatapp.co.uk/'
-	
+		web_tag: "https://www.mychatapp.co.uk/",
 	},
 	{
 		name: "Arome d'Ayman",
@@ -210,15 +151,15 @@ const projects = [
 		],
 		image: perfumeproj,
 		source_code_link: "https://github.com/abdullahismail2/perfume-project",
-		web_tag: 'https://arome-d-ayman.co.uk/'
+		web_tag: "https://arome-d-ayman.co.uk/",
 	},
 	{
 		name: "Classical Snake Game",
 		description:
-			"I crafted a classic Snake Game using HTML, CSS, and JavaScript, with intuitive controls and dynamic gameplay, players navigate the snake through a grid, consuming food to grow longer while avoiding collisions. The game features responsive design, CSS animations, and JavaScript logic for smooth interactivity and scoring",
+			"I crafted a classic Snake Game using HTML, CSS, and JavaScript, players navigate the snake through a grid, consuming food to grow longer while avoiding collisions. The game features responsive design, CSS animations, and JavaScript logic for smooth interactivity and scoring",
 		tags: [
 			{
-				name: "problems-solving",
+				name: "problem-solving",
 				color: "blue-text-gradient",
 			},
 			{
@@ -232,8 +173,8 @@ const projects = [
 		],
 		image: snake,
 		source_code_link: "https://github.com/AbdullahIsmail2/snake-game",
-		web_tag: 'https://classicalsnakegame.netlify.app/'
-	}
+		web_tag: "https://classicalsnakegame.netlify.app/",
+	},
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, projects };

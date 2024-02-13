@@ -42,7 +42,7 @@ const ProjectCard = ({
 	index,
 	image,
 	source_code_link,
-	web_tag
+	web_tag,
 }) => {
 	return (
 		<motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
@@ -69,7 +69,11 @@ const ProjectCard = ({
 							onClick={() => window.open(web_tag, "_blank")}
 							className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
 						>
-							<img src={webpic} alt className="w-1/2 h-1/2 object-contain bg-red"/>
+							<img
+								src={webpic}
+								alt
+								className="w-1/2 h-1/2 object-contain bg-red"
+							/>
 						</div>
 					</div>
 				</div>
@@ -79,7 +83,9 @@ const ProjectCard = ({
 					<p className="mt-2 text-secondary text-[14px]">{description}</p>
 					<span className="flex flex-wrap gap-x-4 mt-4">
 						{tags.map((tag) => (
-							<span className={`${tag.color}`}>#{tag.name}</span>
+							<span key={tag.name} className={`${tag.color}`}>
+								#{tag.name}
+							</span>
 						))}
 					</span>
 				</div>

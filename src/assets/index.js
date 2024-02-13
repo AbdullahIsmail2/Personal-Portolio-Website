@@ -20,9 +20,14 @@ import snake from './snake.png'
 
 import webpic from './final-web.png'
 import linkedin from './linkedin2.png'
+import charity from './charity-web.png'
+
+import techimg1 from './backend.png'
 
 
 export {
+  techimg1,
+  charity,
   linkedin,
   webpic,
   snake,
