@@ -8,10 +8,10 @@ This is a personal project website showcasing my portfolio, built using HTML, CS
 - Responsive design: Ensures optimal viewing and interaction across various devices and screen sizes.
 - Beautiful animations: Utilizes Framer Motion for creating stunning animations throughout the website.
 - Sections:
-  - **Navbar**: Provides easy navigation as well as links to GitHub and LinkedIn profile.
+  - **Navbar**: Provides easy navigation as well as links to GitHub, LinkedIn profile and my CV.
   - **Hero Section**: Introduces visitors to the website and provides a brief overview.
-  - **Overview Section**: Offers a detailed overview of my background, experience, and interests.
-  - **Technologies Section**: Lists the technologies and tools used in building the website.
+  - **Overview Section**: I provide some detail about myself.
+  - **Technologies Section**: Listed the technologies and tools in my current arsenal.
   - **Projects Section**: Showcases a selection of my projects with descriptions and links.
   - **Key Skills Section**: Highlights key skills and expertise.
   - **Contact Us Section**: Provides contact information.
