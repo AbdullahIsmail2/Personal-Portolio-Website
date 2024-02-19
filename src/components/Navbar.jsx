@@ -75,6 +75,12 @@ const Navbar = () => {
 							)
 						}
 					/>
+					<a
+						className="text-3xl font-semibold cursor-pointer"
+						href='https://abdullahismailcv.tiiny.site/' target="_blank"
+					>
+						CV
+					</a>
 				</div>
 
 				<ul className="hidden w-1/3 max-w-[300px] sm:flex justify-between gap-5 md:gap-10">

@@ -23,7 +23,7 @@ const About = () => {
 					className="text-secondary text-[17px] max-w-3xl leading-[30px] mt-4"
 				>
 					<p>
-						Hello! I'm a passionate self-taught junior frontend developer with a
+						Hello! I'm a zealous self-taught junior frontend developer with a
 						keen eye for creating captivating digital experiences. My journey
 						into the world of web development has been driven by an insatiable
 						curiosity and a love for turning ideas into interactive and visually

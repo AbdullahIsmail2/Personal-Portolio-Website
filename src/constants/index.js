@@ -89,7 +89,7 @@ const projects = [
 	{
 		name: "Website for a Real charity",
 		description:
-			"Collaborated with the charity (Somali Parents) to redesign their website and enhance user experience.I implemented modern design principles and responsive web design techniques using React JS and tailwind CSS to ensure accessibility across devices. I integrated donation and volunteer management systems to streamline the operations of the charity. Conducted user testing and feedback sessions to iterate and improve the functionality and usability of the website.",
+			"Collaborated with a charity to redesign their website and enhance user experience.I implemented modern design principles and responsive web design techniques using React JS and Tailwind CSS to ensure smoothness across devices. I integrated volunteer management systems to streamline the operations of the charity. Finally, I conducted user testing and feedback sessions to iterate and improve the functionality and usability of the website.",
 		tags: [
 			{
 				name: "user-testing",
@@ -112,14 +112,14 @@ const projects = [
 	{
 		name: "Real-Time Chat App",
 		description:
-			"I engineered a dynamic real-time chat application using HTML, CSS, and React.js, powered by Firebase and ChatEngine. This platform also has user sign in authenticatio. I have enabled seamless communication with real-time updates, facilitating instant messaging, file attachments, and image sharing. ",
+			"I engineered a dynamic real-time chat application using HTML, CSS, and React.js, powered by Firebase and ChatEngine. This platform also has Google user sign-in authentication. I have enabled seamless communication with real-time updates, facilitating instant messaging, file attachments, and image sharing, allowing users to express themselves more comprehensively and interact more meaningfully. ",
 		tags: [
 			{
 				name: "RESTful API",
 				color: "green-text-gradient",
 			},
 			{
-				name: "react",
+				name: "Google-Authentication",
 				color: "blue-text-gradient",
 			},
 			{
@@ -134,18 +134,18 @@ const projects = [
 	{
 		name: "Arome d'Ayman",
 		description:
-			"I developed a sleek e-commerce platform for my friend Ayman's side business, featuring modern design and seamless functionality. Using React.js and tailwind CSS, the site offers users an engaging browsing experience, showcasing Ayman's fragrances with elegant visuals and mobile-friendly design..",
+			"I developed a sleek e-commerce platform for my client's business, featuring modern design and seamless functionality. Using React.js and Tailwind CSS, the site offers users an engaging browsing experience, showcasing Ayman's fragrances with elegant visuals. I also included a modern image gallery providing visitors with a captivating visual experience as well as a newsletter subscription to  grow the client's subscriber base, enabling targeted marketing.",
 		tags: [
 			{
-				name: "react",
+				name: "Revenue Enhancement Strategies",
 				color: "blue-text-gradient",
 			},
 			{
-				name: "tailwind",
+				name: "Client Communication",
 				color: "green-text-gradient",
 			},
 			{
-				name: "responsive",
+				name: "UI",
 				color: "pink-text-gradient",
 			},
 		],
@@ -156,7 +156,7 @@ const projects = [
 	{
 		name: "Classical Snake Game",
 		description:
-			"I crafted a classic Snake Game using HTML, CSS, and JavaScript, players navigate the snake through a grid, consuming food to grow longer while avoiding collisions. The game features responsive design, CSS animations, and JavaScript logic for smooth interactivity and scoring",
+			"I crafted a snake game using HTML, CSS, and vanilla JavaScript, players navigate the snake through a grid, consuming food to grow longer while avoiding collisions. The game features responsive design, CSS animations, and JavaScript logic for smooth interactivity and scoring. I highlighted my ability to tackle challenges systematically and translate intricate concepts into engaging, functional elements, underscoring my proficiency in thinking logically & algorithmically.",
 		tags: [
 			{
 				name: "problem-solving",
@@ -167,7 +167,7 @@ const projects = [
 				color: "green-text-gradient",
 			},
 			{
-				name: "css",
+				name: "grid",
 				color: "pink-text-gradient",
 			},
 		],
