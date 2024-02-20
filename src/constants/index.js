@@ -110,6 +110,28 @@ const projects = [
 		web_tag: "https://somaliparents.co.uk/",
 	},
 	{
+		name: "Client Ecommerce Site",
+		description:
+			"I developed a sleek e-commerce platform for my client's business, featuring modern design and seamless functionality. Using React.js and Tailwind CSS, the site offers users an engaging browsing experience, showcasing Ayman's fragrances with elegant visuals. I also included a modern image gallery providing visitors with a captivating visual experience as well as a newsletter subscription to  grow the client's subscriber base, enabling targeted marketing.",
+		tags: [
+			{
+				name: "Revenue Enhancement Strategies",
+				color: "blue-text-gradient",
+			},
+			{
+				name: "Client Communication",
+				color: "green-text-gradient",
+			},
+			{
+				name: "UI",
+				color: "pink-text-gradient",
+			},
+		],
+		image: perfumeproj,
+		source_code_link: "https://github.com/abdullahismail2/perfume-project",
+		web_tag: "https://arome-d-ayman.co.uk/",
+	},
+	{
 		name: "Real-Time Chat App",
 		description:
 			"I engineered a dynamic real-time chat application using HTML, CSS, and React.js, powered by Firebase and ChatEngine. This platform also has Google user sign-in authentication. I have enabled seamless communication with real-time updates, facilitating instant messaging, file attachments, and image sharing, allowing users to express themselves more comprehensively and interact more meaningfully. ",
@@ -130,28 +152,6 @@ const projects = [
 		image: chatapp,
 		source_code_link: "https://github.com/AbdullahIsmail2/Real-Time-ChatApp",
 		web_tag: "https://www.mychatapp.co.uk/",
-	},
-	{
-		name: "Arome d'Ayman",
-		description:
-			"I developed a sleek e-commerce platform for my client's business, featuring modern design and seamless functionality. Using React.js and Tailwind CSS, the site offers users an engaging browsing experience, showcasing Ayman's fragrances with elegant visuals. I also included a modern image gallery providing visitors with a captivating visual experience as well as a newsletter subscription to  grow the client's subscriber base, enabling targeted marketing.",
-		tags: [
-			{
-				name: "Revenue Enhancement Strategies",
-				color: "blue-text-gradient",
-			},
-			{
-				name: "Client Communication",
-				color: "green-text-gradient",
-			},
-			{
-				name: "UI",
-				color: "pink-text-gradient",
-			},
-		],
-		image: perfumeproj,
-		source_code_link: "https://github.com/abdullahismail2/perfume-project",
-		web_tag: "https://arome-d-ayman.co.uk/",
 	},
 	{
 		name: "Classical Snake Game",

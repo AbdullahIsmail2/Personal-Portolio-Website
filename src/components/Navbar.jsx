@@ -43,20 +43,6 @@ const Navbar = () => {
 			<div
 				className={`h-full w-full flex items-center justify-between max-w-7xl mx-auto relative bg-transparent ${styles.paddingX}`}
 			>
-				{/* <Link
-					to={"/"}
-					className="flex gap-2 items-center"
-					onClick={() => {
-						window.scrollTo(0, 0);
-						setActive("");
-					}}
-				>
-					<img src={Logo} className="h-9 w-9 object-contain" alt="logo" />
-					<p className="font-bold flex-grow flex cursor-pointer text-[18px]">
-						Abdullah &nbsp;{" "}
-						<span className="hidden lg:block"> | &nbsp; Personal Website</span>
-					</p>
-				</Link> */}
 				<div className="h-full flex items-center justify-center gap-4 xs:gap-6">
 					<img
 						src={github}
@@ -76,8 +62,9 @@ const Navbar = () => {
 						}
 					/>
 					<a
-						className="text-3xl font-semibold cursor-pointer"
-						href='https://abdullahismailcv.tiiny.site/' target="_blank"
+						className="text-2xl xs:text-3xl font-semibold cursor-pointer"
+						href='https://acrobat.adobe.com/id/urn:aaid:sc:EU:eda0fc37-c00d-4b45-b7ab-15555dbdcaf5'
+						 target="_blank"
 					>
 						CV
 					</a>

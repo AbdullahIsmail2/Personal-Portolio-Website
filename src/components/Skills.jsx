@@ -39,7 +39,7 @@ const ServiceCard = ({ title, text, icon, index }) => {
 						scale: 1,
 						speed: 450,
 					}}
-					className="bg-tertiary rounded-[20px] py-8 px-12 h-[518px] xxxs:h-[468px] xxs:h-[438px]  xs:[h-398px] xxs:max-xs:pt-16 flex flex-col gap-8"
+					className="bg-tertiary rounded-[20px] pb-8 px-12 h-[518px] xxxs:h-[468px] xxs:h-[438px]  xs:[h-398px] xxs:max-xs:pt-16 flex flex-col gap-8 pt-12"
 				>
 					{/* <img
 						src={icon}
